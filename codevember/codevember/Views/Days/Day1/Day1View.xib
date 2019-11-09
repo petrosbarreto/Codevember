@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Day1View" customModule="codevember" customModuleProvider="target">
+            <connections>
+                <outlet property="leftBullet" destination="6b5-bG-L2C" id="eP1-q3-S8s"/>
+                <outlet property="leftContainer" destination="lF4-hd-jHz" id="DPw-o2-mBf"/>
+                <outlet property="leftInner" destination="juQ-D8-gAx" id="E8h-NX-pZ0"/>
+                <outlet property="rightBullet" destination="S4A-KL-uQ9" id="UBZ-pp-c3h"/>
+                <outlet property="rightContainer" destination="NPl-op-V71" id="mrZ-Ak-Kfo"/>
+                <outlet property="rightInner" destination="ODW-zZ-Fn0" id="gHW-68-kEm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTRAST  CODEVEMBER  DAY 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfL-yU-oxI">
+                    <rect key="frame" x="57.5" y="194.5" width="205" height="179.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lF4-hd-jHz">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="568"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPl-op-V71">
+                    <rect key="frame" x="160" y="0.0" width="160" height="568"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juQ-D8-gAx">
+                    <rect key="frame" x="16" y="0.0" width="288" height="284"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6b5-bG-L2C">
+                            <rect key="frame" x="108" y="106.5" width="72" height="71"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="6b5-bG-L2C" firstAttribute="centerX" secondItem="juQ-D8-gAx" secondAttribute="centerX" id="LNb-gu-Ur2"/>
+                        <constraint firstItem="6b5-bG-L2C" firstAttribute="centerY" secondItem="juQ-D8-gAx" secondAttribute="centerY" id="ScF-IK-11e"/>
+                        <constraint firstItem="6b5-bG-L2C" firstAttribute="height" secondItem="juQ-D8-gAx" secondAttribute="height" multiplier="0.25" id="TLL-XO-C4D"/>
+                        <constraint firstItem="6b5-bG-L2C" firstAttribute="width" secondItem="juQ-D8-gAx" secondAttribute="width" multiplier="0.25" id="ccl-Hn-9Gy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODW-zZ-Fn0">
+                    <rect key="frame" x="16" y="284" width="288" height="284"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4A-KL-uQ9">
+                            <rect key="frame" x="108" y="106.5" width="72" height="71"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="S4A-KL-uQ9" firstAttribute="centerX" secondItem="ODW-zZ-Fn0" secondAttribute="centerX" id="1GC-ro-jT3"/>
+                        <constraint firstItem="S4A-KL-uQ9" firstAttribute="centerY" secondItem="ODW-zZ-Fn0" secondAttribute="centerY" id="Ggr-NQ-Cdi"/>
+                        <constraint firstItem="S4A-KL-uQ9" firstAttribute="height" secondItem="ODW-zZ-Fn0" secondAttribute="height" multiplier="0.25" id="Zkx-Tx-h3V"/>
+                        <constraint firstItem="S4A-KL-uQ9" firstAttribute="width" secondItem="ODW-zZ-Fn0" secondAttribute="width" multiplier="0.25" id="way-z1-cPh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lF4-hd-jHz" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.5" id="1DC-UK-on5"/>
+                <constraint firstItem="juQ-D8-gAx" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.5" id="56S-yR-zVS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lF4-hd-jHz" secondAttribute="bottom" id="Eow-ms-eao"/>
+                <constraint firstItem="lF4-hd-jHz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Gtt-eH-0DF"/>
+                <constraint firstItem="juQ-D8-gAx" firstAttribute="centerX" secondItem="lF4-hd-jHz" secondAttribute="trailing" id="JwK-Qg-pHW"/>
+                <constraint firstItem="ODW-zZ-Fn0" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.5" id="Ks8-ay-TQn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NPl-op-V71" secondAttribute="bottom" id="Qh9-mV-bZd"/>
+                <constraint firstItem="ODW-zZ-Fn0" firstAttribute="centerX" secondItem="NPl-op-V71" secondAttribute="leading" id="VCj-hB-VE8"/>
+                <constraint firstItem="ODW-zZ-Fn0" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Vcp-9O-2xo"/>
+                <constraint firstItem="vfL-yU-oxI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="YMZ-wm-Ccc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NPl-op-V71" secondAttribute="trailing" id="agv-ra-jCY"/>
+                <constraint firstItem="ODW-zZ-Fn0" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.9" id="mcZ-BH-kCK"/>
+                <constraint firstItem="NPl-op-V71" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="p1d-MS-C4V"/>
+                <constraint firstItem="NPl-op-V71" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.5" id="qJT-b3-jST"/>
+                <constraint firstItem="juQ-D8-gAx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qqp-8W-oqL"/>
+                <constraint firstItem="lF4-hd-jHz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sBO-bH-6YY"/>
+                <constraint firstItem="vfL-yU-oxI" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="wXt-Q0-Qdo"/>
+                <constraint firstItem="juQ-D8-gAx" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.9" id="wdc-jg-jTX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.75" y="119.36619718309859"/>
+        </view>
+    </objects>
+</document>
