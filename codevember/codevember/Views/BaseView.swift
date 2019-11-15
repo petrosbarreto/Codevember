@@ -20,7 +20,13 @@ class BaseView: UIViewController {
     
     // MARK: - Properties
     
+    var activateGestures: Bool { return true }
+    
     var interactionMessage: String? { return nil }
+    
+    var viewId: Int { return .max }
+    
+    var viewDescription: String { return "Day \(self.viewId + 1)" }
     
     override var prefersStatusBarHidden: Bool { true }
     
@@ -34,8 +40,15 @@ class BaseView: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationBar.barStyle = .black
-        DispatchQueue.main.async {
-            self.setUp()
+        if self.activateGestures {
+            DispatchQueue.main.async {
+                self.setUp()
+            }
+        } else {
+            DispatchQueue.main.async {
+                let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(self.didLongPress))
+                self.view.addGestureRecognizer(longPressGesture)
+            }
         }
     }
     

@@ -9,23 +9,31 @@
 import UIKit
 
 class Menu: UITableViewController {
+    
+    // MARK: - Properties
+    
+    override var prefersStatusBarHidden: Bool { true }
+    
+    private var views: [BaseView] = [
+        Day1View(),
+        Day9View()
+    ]
+    
+    // MARK: - Life cicle functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override var prefersStatusBarHidden: Bool { true }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 30
+        return self.views.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Day \(indexPath.row + 1)"
+        cell.textLabel?.text = self.views[indexPath.row].viewDescription
         cell.textLabel?.textColor = .white
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         cell.backgroundColor = .clear
@@ -38,18 +46,7 @@ class Menu: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        if indexPath.row == 0 {
-            let view = Day1View()
-            self.navigationController?.pushViewController(view, animated: true)
-            return
-        }
-        
-        if let defaultView = self.storyboard?.instantiateViewController(identifier: "DefaultView") as? DefaultView {
-            defaultView.titleText = "Day \(indexPath.row + 1)"
-            self.navigationController?.pushViewController(defaultView, animated: true)
-        }
-        
+        self.navigationController?.pushViewController(self.views[indexPath.row], animated: true)
     }
 
 }

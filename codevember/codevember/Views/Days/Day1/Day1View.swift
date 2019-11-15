@@ -25,6 +25,8 @@ class Day1View: BaseView, BaseViewInteractionDelegate {
         "Use tap and swipes to interact."
     }
     
+    override var viewId: Int { 0 }
+    
     private var black: UIColor!
     private var isAnimating: Bool = false
     private var isWhite: Bool = false
@@ -40,6 +42,11 @@ class Day1View: BaseView, BaseViewInteractionDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        self.setUpViews()
     }
     
     // MARK: - Aux functions
