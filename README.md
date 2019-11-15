@@ -6,9 +6,10 @@ This is a native iOS project. You can use and/or reproduce all the available cod
 
 Interface and animations with UIKit.
 
-![Demo Video](https://www.linkedin.com/posts/renan-germano_codevember-contrast-day1-activity-6598731687042134016-a5Ao)
+[Demo Video](https://www.linkedin.com/posts/renan-germano_codevember-contrast-day1-activity-6598731687042134016-a5Ao)
 
 ## Day 9 - Game
 
 2D game with SpriteKit. 🎮🕹👾
 
+[Demo Video](https://www.linkedin.com/posts/renan-germano_codevember-game-day9-activity-6601186574380126208-Odgy)
