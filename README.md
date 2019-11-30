@@ -19,3 +19,9 @@ Interface and animations with UIKit.
 2D game with SpriteKit. 🎮🕹👾
 
 [Demo Video](https://www.linkedin.com/posts/renan-germano_codevember-game-day9-activity-6601186574380126208-Odgy)
+
+# Day 16 - Math
+
+Custom keyboard to write polynomials using UIKit and view coding.
+
+[Demo Video](https://www.linkedin.com/posts/renan-germano_codevember-mathematics-math-activity-6606648643749498880-3Jzy)
