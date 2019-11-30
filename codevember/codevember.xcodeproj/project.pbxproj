@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0E3BA1238635C300D5D1C2 /* Day16View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0E3BA0238635C300D5D1C2 /* Day16View.swift */; };
 		CF389AE9236F9E3900A71C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF389AE8236F9E3900A71C6A /* AppDelegate.swift */; };
 		CF389AEB236F9E3900A71C6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF389AEA236F9E3900A71C6A /* SceneDelegate.swift */; };
 		CF389AF0236F9E3900A71C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF389AEE236F9E3900A71C6A /* Main.storyboard */; };
@@ -17,12 +18,41 @@
 		CF389B04236FA73C00A71C6A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF389B03236FA73C00A71C6A /* BaseView.swift */; };
 		CF389B11236FB9E400A71C6A /* Day1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF389B0F236FB9E400A71C6A /* Day1View.swift */; };
 		CF389B12236FB9E400A71C6A /* Day1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF389B10236FB9E400A71C6A /* Day1View.xib */; };
+		CF7CB9BF2392E4C9003A26D3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7CB9BE2392E4C9003A26D3 /* KeyboardViewController.swift */; };
+		CF7CB9C32392E4C9003A26D3 /* Polynomial.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF7CB9BC2392E4C8003A26D3 /* Polynomial.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF7CB9C92392E5FF003A26D3 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7CB9C82392E5FF003A26D3 /* Key.swift */; };
+		CF7CB9CB2392E627003A26D3 /* PKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7CB9CA2392E627003A26D3 /* PKButton.swift */; };
 		CFFFF81B237BB5D100A0A49F /* Day9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFFF819237BB5D100A0A49F /* Day9View.swift */; };
 		CFFFF81C237BB5D100A0A49F /* Day9View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFFFF81A237BB5D100A0A49F /* Day9View.xib */; };
 		CFFFF81E237BB6B500A0A49F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFFF81D237BB6B500A0A49F /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CF7CB9C12392E4C9003A26D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF389ADD236F9E3900A71C6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF7CB9BB2392E4C8003A26D3;
+			remoteInfo = Polinomial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF7CB9C72392E4C9003A26D3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF7CB9C32392E4C9003A26D3 /* Polynomial.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CF0E3BA0238635C300D5D1C2 /* Day16View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16View.swift; sourceTree = "<group>"; };
 		CF389AE5236F9E3900A71C6A /* codevember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codevember.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF389AE8236F9E3900A71C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF389AEA236F9E3900A71C6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +65,11 @@
 		CF389B03236FA73C00A71C6A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		CF389B0F236FB9E400A71C6A /* Day1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1View.swift; sourceTree = "<group>"; };
 		CF389B10236FB9E400A71C6A /* Day1View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Day1View.xib; sourceTree = "<group>"; };
+		CF7CB9BC2392E4C8003A26D3 /* Polynomial.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Polynomial.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7CB9BE2392E4C9003A26D3 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		CF7CB9C02392E4C9003A26D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF7CB9C82392E5FF003A26D3 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		CF7CB9CA2392E627003A26D3 /* PKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKButton.swift; sourceTree = "<group>"; };
 		CFFFF819237BB5D100A0A49F /* Day9View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9View.swift; sourceTree = "<group>"; };
 		CFFFF81A237BB5D100A0A49F /* Day9View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Day9View.xib; sourceTree = "<group>"; };
 		CFFFF81D237BB6B500A0A49F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -48,13 +83,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF7CB9B92392E4C8003A26D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0E3B9F2386355700D5D1C2 /* Day 16 */ = {
+			isa = PBXGroup;
+			children = (
+				CF0E3BA0238635C300D5D1C2 /* Day16View.swift */,
+			);
+			path = "Day 16";
+			sourceTree = "<group>";
+		};
 		CF389ADC236F9E3900A71C6A = {
 			isa = PBXGroup;
 			children = (
 				CF389AE7236F9E3900A71C6A /* codevember */,
+				CF7CB9BD2392E4C8003A26D3 /* Polynomial */,
 				CF389AE6236F9E3900A71C6A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				CF389AE5236F9E3900A71C6A /* codevember.app */,
+				CF7CB9BC2392E4C8003A26D3 /* Polynomial.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +165,7 @@
 			children = (
 				CF389B06236FAC4B00A71C6A /* Day1 */,
 				CFFFF818237BB5AC00A0A49F /* Day 9 */,
+				CF0E3B9F2386355700D5D1C2 /* Day 16 */,
 			);
 			path = Days;
 			sourceTree = "<group>";
@@ -124,6 +177,17 @@
 				CF389B10236FB9E400A71C6A /* Day1View.xib */,
 			);
 			path = Day1;
+			sourceTree = "<group>";
+		};
+		CF7CB9BD2392E4C8003A26D3 /* Polynomial */ = {
+			isa = PBXGroup;
+			children = (
+				CF7CB9BE2392E4C9003A26D3 /* KeyboardViewController.swift */,
+				CF7CB9C02392E4C9003A26D3 /* Info.plist */,
+				CF7CB9C82392E5FF003A26D3 /* Key.swift */,
+				CF7CB9CA2392E627003A26D3 /* PKButton.swift */,
+			);
+			path = Polynomial;
 			sourceTree = "<group>";
 		};
 		CFFFF818237BB5AC00A0A49F /* Day 9 */ = {
@@ -146,15 +210,34 @@
 				CF389AE1236F9E3900A71C6A /* Sources */,
 				CF389AE2236F9E3900A71C6A /* Frameworks */,
 				CF389AE3236F9E3900A71C6A /* Resources */,
+				CF7CB9C72392E4C9003A26D3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF7CB9C22392E4C9003A26D3 /* PBXTargetDependency */,
 			);
 			name = codevember;
 			productName = codevember;
 			productReference = CF389AE5236F9E3900A71C6A /* codevember.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CF7CB9BB2392E4C8003A26D3 /* Polinomial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7CB9C42392E4C9003A26D3 /* Build configuration list for PBXNativeTarget "Polinomial" */;
+			buildPhases = (
+				CF7CB9B82392E4C8003A26D3 /* Sources */,
+				CF7CB9B92392E4C8003A26D3 /* Frameworks */,
+				CF7CB9BA2392E4C8003A26D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Polinomial;
+			productName = Polinomial;
+			productReference = CF7CB9BC2392E4C8003A26D3 /* Polynomial.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -162,12 +245,15 @@
 		CF389ADD236F9E3900A71C6A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Renan Germano";
 				TargetAttributes = {
 					CF389AE4236F9E3900A71C6A = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					CF7CB9BB2392E4C8003A26D3 = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
@@ -185,6 +271,7 @@
 			projectRoot = "";
 			targets = (
 				CF389AE4236F9E3900A71C6A /* codevember */,
+				CF7CB9BB2392E4C8003A26D3 /* Polinomial */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +289,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF7CB9BA2392E4C8003A26D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -210,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF389AFF236FA44400A71C6A /* DefaultView.swift in Sources */,
+				CF0E3BA1238635C300D5D1C2 /* Day16View.swift in Sources */,
 				CF389AFD236F9ED100A71C6A /* Menu.swift in Sources */,
 				CFFFF81E237BB6B500A0A49F /* GameScene.swift in Sources */,
 				CF389B04236FA73C00A71C6A /* BaseView.swift in Sources */,
@@ -220,7 +315,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF7CB9B82392E4C8003A26D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7CB9BF2392E4C9003A26D3 /* KeyboardViewController.swift in Sources */,
+				CF7CB9C92392E5FF003A26D3 /* Key.swift in Sources */,
+				CF7CB9CB2392E627003A26D3 /* PKButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF7CB9C22392E4C9003A26D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF7CB9BB2392E4C8003A26D3 /* Polinomial */;
+			targetProxy = CF7CB9C12392E4C9003A26D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CF389AEE236F9E3900A71C6A /* Main.storyboard */ = {
@@ -359,6 +472,7 @@
 		CF389AFA236F9E3A00A71C6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C45KF93FKW;
@@ -377,6 +491,7 @@
 		CF389AFB236F9E3A00A71C6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C45KF93FKW;
@@ -387,6 +502,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.renan.codevember;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF7CB9C52392E4C9003A26D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C45KF93FKW;
+				INFOPLIST_FILE = Polynomial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.renan.codevember.Polynomial;
+				PRODUCT_NAME = Polynomial;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF7CB9C62392E4C9003A26D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C45KF93FKW;
+				INFOPLIST_FILE = Polynomial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.renan.codevember.Polynomial;
+				PRODUCT_NAME = Polynomial;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,6 +564,15 @@
 			buildConfigurations = (
 				CF389AFA236F9E3A00A71C6A /* Debug */,
 				CF389AFB236F9E3A00A71C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7CB9C42392E4C9003A26D3 /* Build configuration list for PBXNativeTarget "Polinomial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7CB9C52392E4C9003A26D3 /* Debug */,
+				CF7CB9C62392E4C9003A26D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

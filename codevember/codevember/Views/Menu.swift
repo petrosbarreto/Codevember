@@ -16,7 +16,8 @@ class Menu: UITableViewController {
     
     private var views: [BaseView] = [
         Day1View(),
-        Day9View()
+        Day9View(),
+        Day16View()
     ]
     
     // MARK: - Life cicle functions
